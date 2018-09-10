@@ -60,6 +60,12 @@ export class SuperTab extends NavControllerBase implements OnInit, AfterViewInit
   icon: string;
 
   /**
+   * Name of the cssClass to use
+   */
+  @Input()
+  cssClass: string;
+
+  /**
    * @input {Page} Set the root page for this tab.
    */
   @Input() root: any;

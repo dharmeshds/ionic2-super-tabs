@@ -13,7 +13,7 @@ import {
   template: `
     <ion-icon *ngIf="!!icon" [name]="icon" [color]="color"></ion-icon>
     <span class="title" *ngIf="!!title" ion-text [color]="color">{{ title }}</span>
-    <ion-badge mode="md" [color]="badgeColor">{{ badge }}</ion-badge>
+    <ion-badge mode="md" [color]="badgeColor" *ngIf="badge > 0">{{ badge }}</ion-badge>
     <div class="button-effect"></div>
   `,
   host: {
